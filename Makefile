@@ -7,7 +7,7 @@ build:
 	docker build -t $(IMAGE_LATEST) -t $(IMAGE_VERSION) docker/
 
 up:
-	docker-compose up -d
+	docker-compose up -d --build
 
 down:
 	docker-compose down
